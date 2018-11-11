@@ -1,0 +1,51 @@
+                body 
+                {
+                    margin:0;
+                    background-color: #cd9557;
+                    font-family: 'Crimson Text', serif;
+                }
+                .parent {
+                    display: flex;
+                    direction: row;
+                }
+                .left {
+                    background-color: rgba(0,46,102,.8);
+                    width: 45%;
+                    height: 100vh;
+                    -webkit-transform: skewX(-8deg);
+                    transform: skewX(-8deg);
+                    -webkit-transform-origin: top right;
+                    transform-origin: top right;
+                }
+                .right {
+                    background-color: #cd9557;
+                    width: 55%;
+                    height: 100vh;
+                }
+                .child-div {
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                }
+                .reverse-skew {
+                    transform: skewX(8deg);
+                }
+                .content-div {
+                    width: 75%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 1.5;
+                    font-size: larger;
+                }
+                .author-div {
+                    margin-top: 50px;
+                }
+                a {
+                    color: #fff;
+                }
+                a:hover {
+                    color: #e5e5e5;
+                }

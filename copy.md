@@ -1,0 +1,5 @@
+left: "I'm very excited to share service workers and other offline tech with you! I'm working really hard to finish the book by January 2019. Sign up for my mailing list to know as soon as it's finished, and get some sneak peeks!"
+
+right: "Let's Take This Offline is a book about service workers and common uses and gotchas. The book will focus both on the implementation of a service worker and its features, as well as the human element. Service workers have some of the greatest potential in modern tech for helping users — especially users without a consistent Internet connection. Let's Take This Offline will teach you everything you need to know to implement service workers and give your users a consistent experience without (and without!) a connection."
+
+about: "Carmen is a full stack JavaScript developer living and working in Oklahoma City. She's been interested in offline first technology for a long time, and spent years researching internet access demographics, and offline tech. Carmen built [MargieMap](https://www.margiemap.com) to illustrate income to library access."
