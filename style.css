@@ -6,7 +6,7 @@
                 }
                 .parent {
                     display: flex;
-                    direction: row;
+                    flex-direction: row;
                 }
                 .left {
                     background-color: rgba(0,46,102,.8);
@@ -28,15 +28,13 @@
                     justify-content: center;
                     align-items: center;
                     height: 100%;
+                    overflow-y: auto;
                 }
                 .reverse-skew {
                     transform: skewX(8deg);
                 }
                 .content-div {
                     width: 75%;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
                     line-height: 1.5;
                     font-size: larger;
                 }
@@ -45,7 +43,38 @@
                 }
                 a {
                     color: #fff;
+                    text-decoration: underline;
                 }
                 a:hover {
                     color: #e5e5e5;
+                }
+
+                @media(max-width: 1000px) {
+                    .parent {
+                        flex-direction: column;
+                    }
+
+                    .left {
+                        background-color: rgba(0,46,102,.8);
+                        width: 100vw;
+                        -webkit-transform: none;
+                        transform: none;
+                        -webkit-transform-origin: none;
+                        transform-origin: none;
+                        height: auto;
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+
+                    .right {
+                        background-color: #cd9557;
+                        width: 100vw;
+                        height: auto;
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+
+                    .reverse-skew {
+                        transform: none;
+                    }
                 }
