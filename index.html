@@ -69,5 +69,11 @@
                     </div>
                 </div>
             </div>
+
+            <script>
+                if(navigator.serviceWorker) {
+                    navigator.serviceWorker.register('serviceworker.js');
+                }
+            </script>
         </body>
     </html>
