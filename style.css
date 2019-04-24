@@ -1,80 +1,94 @@
-                body 
-                {
-                    margin:0;
-                    background-color: #cd9557;
-                    font-family: 'Crimson Text', serif;
-                }
-                .parent {
-                    display: flex;
-                    flex-direction: row;
-                }
-                .left {
-                    background-color: rgba(0,46,102,.8);
-                    width: 45%;
-                    height: 100vh;
-                    -webkit-transform: skewX(-8deg);
-                    transform: skewX(-8deg);
-                    -webkit-transform-origin: top right;
-                    transform-origin: top right;
-                }
-                .right {
-                    background-color: #cd9557;
-                    width: 55%;
-                    height: 100vh;
-                }
-                .child-div {
-                    color: #fff;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
-                    overflow-y: auto;
-                }
-                .reverse-skew {
-                    transform: skewX(8deg);
-                }
-                .content-div {
-                    width: 75%;
-                    line-height: 1.5;
-                    font-size: larger;
-                }
-                .author-div {
-                    margin-top: 50px;
-                }
-                a {
-                    color: #fff;
-                    text-decoration: underline;
-                }
-                a:hover {
-                    color: #e5e5e5;
-                }
+body {
+    margin:0;
+    background-color: #cd9557;
+    font-family: 'Crimson Text', serif;
+}
+.parent {
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    background-color: rgba(0,46,102,.8);
+    width: 45%;
+    height: 100vh;
+    -webkit-transform: skewX(-8deg);
+    transform: skewX(-8deg);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+.right {
+    background-color: #cd9557;
+    width: 55%;
+    height: 100vh;
+}
+.child-div {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+}
+.reverse-skew {
+    transform: skewX(8deg);
+}
+.content-div {
+    width: 75%;
+    line-height: 1.5;
+    font-size: larger;
+}
+.author-div {
+    margin-top: 50px;
+}
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+a:hover {
+    color: #e5e5e5;
+}
 
-                @media(max-width: 1000px) {
-                    .parent {
-                        flex-direction: column;
-                    }
+.author-parent {
+    display: flex;
+}
 
-                    .left {
-                        background-color: rgba(0,46,102,.8);
-                        width: 100vw;
-                        -webkit-transform: none;
-                        transform: none;
-                        -webkit-transform-origin: none;
-                        transform-origin: none;
-                        height: auto;
-                        padding-top: 50px;
-                        padding-bottom: 50px;
-                    }
+.author-left img {
+    border-radius: 100%;
+    width: 125px;
+    height: auto;
+    margin-right: 15px;
+}
 
-                    .right {
-                        background-color: #cd9557;
-                        width: 100vw;
-                        height: auto;
-                        padding-top: 50px;
-                        padding-bottom: 50px;
-                    }
+span.ltto {
+    font-weight: bolder;
+}
 
-                    .reverse-skew {
-                        transform: none;
-                    }
-                }
+@media(max-width: 1000px) {
+    .parent {
+        flex-direction: column;
+    }
+
+    .left {
+        background-color: rgba(0,46,102,.8);
+        width: 100vw;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transform-origin: none;
+        transform-origin: none;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .right {
+        background-color: #cd9557;
+        width: 100vw;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .reverse-skew {
+        transform: none;
+    }
+}
