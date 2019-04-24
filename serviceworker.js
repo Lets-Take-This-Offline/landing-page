@@ -2,11 +2,12 @@ self.oninstall = function(event) {
     self.skipWaiting();
 
     event.waitUntil(
-        caches.open('serviceworkerbook3').then(function(cache) {
+        caches.open('serviceworkerbook4').then(function(cache) {
             cache.addAll([
                 '/',
                 'index.html',
-                'style.css'
+                'style.css',
+                'carmen.jpg'
             ])
             .then(function() {
                 // .add() doesn't return a response
