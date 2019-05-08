@@ -2,7 +2,7 @@ self.oninstall = function(event) {
     self.skipWaiting();
 
     event.waitUntil(
-        caches.open('serviceworkerbook5').then(function(cache) {
+        caches.open('serviceworkerbook6').then(function(cache) {
             cache.addAll([
                 '/',
                 'index.html',
