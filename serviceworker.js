@@ -2,7 +2,7 @@ self.oninstall = function(event) {
     self.skipWaiting();
 
     event.waitUntil(
-        caches.open('serviceworkerbook4').then(function(cache) {
+        caches.open('serviceworkerbook5').then(function(cache) {
             cache.addAll([
                 '/',
                 'index.html',
@@ -21,6 +21,17 @@ self.oninstall = function(event) {
             console.log('err ', err);
         })
     )
+}
+
+self.onactivate = function() {
+    caches.keys()
+    .then(function(cacheNames) {
+        cacheNames.forEach(function(cache) {
+            if(cache != 'serviceworkerbook5') {
+                caches.delete(cache);
+            }
+        })
+    })
 }
 
 self.onfetch = function(event) {

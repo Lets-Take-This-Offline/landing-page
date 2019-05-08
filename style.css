@@ -63,6 +63,13 @@ span.ltto {
     font-weight: bolder;
 }
 
+.preorder-btn-parent {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+
 @media(max-width: 1000px) {
     .parent {
         flex-direction: column;
